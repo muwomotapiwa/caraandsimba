@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cara & Simba | Wedding Celebration</title>
+    <meta name="description" content="Join Cara and Simba for their wedding celebration on December 20, 2025 in Harare, Zimbabwe" />
+    <meta property="og:title" content="Cara & Simba Wedding" />
+    <meta property="og:description" content="Join us for our special day on December 20, 2025" />
+    <meta property="og:type" content="website" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Invitation Overlay -->
+    <div class="invitation-overlay" id="invitationOverlay">
+        <div class="invitation-content">
+            <h1 class="invitation-title serif">You are invited to the wedding of</h1>
+            <h2 class="invitation-title serif">Cara & Simba</h2>
+            <p class="invitation-subtitle">December 20, 2025 • Harare, Zimbabwe</p>
+            <button class="open-invitation-btn" id="openInvitationBtn">Open Invitation</button>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar" id="navBar">
+        <div class="nav-container">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#details" class="nav-link">Details</a>
+            <a href="#venue" class="nav-link">Venue</a>
+            <a href="#rsvp" class="nav-link">RSVP</a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu">
+        <button class="close-menu" id="closeMenuBtn" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#gallery" class="mobile-nav-link">Gallery</a>
+            <a href="#details" class="mobile-nav-link">Details</a>
+            <a href="#venue" class="mobile-nav-link">Venue</a>
+            <a href="#rsvp" class="mobile-nav-link">RSVP</a>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="names serif">CARA</h1>
+                <span class="ampersand serif">&</span>
+                <h1 class="names serif">SIMBA</h1>
+                
+                <p class="tagline serif">Two souls, one journey</p>
+                
+                <div class="date-location">
+                    <span class="highlight">DECEMBER 20, 2025</span><br>
+                    4:00 PM • Kingfisher in the Park, Harare
+                </div>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-container">
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="days">00</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-down" onclick="scrollToNext()" role="button" tabindex="0" aria-label="Scroll to next section">
+                <div class="scroll-text">Discover our story</div>
+                <div class="scroll-icon"><i class="fas fa-chevron-down"></i></div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Carousel -->
+        <section class="section gallery" id="gallery">
+            <div class="container">
+                <h2 class="section-title serif">Our Moments</h2>
+                <div class="gallery-carousel">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Photo placeholder 1">1</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Photo placeholder 2">2</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Photo placeholder 3">3</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Photo placeholder 4">4</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Photo placeholder 5">5</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Photo placeholder 6">6</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Photo placeholder 7">7</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Photo placeholder 8">8</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="section story">
+            <div class="container">
+                <h2 class="section-title serif">Our Love Story</h2>
+                <div class="story-content">
+                    <div class="story-text">
+                        <p>From our first meeting in the bustling streets of Harare to quiet evenings watching the sunset over Lake Kariba, our journey has been filled with laughter, growth, and unwavering support.</p>
+                        <p>We've shared dreams under African skies, navigated life's challenges hand-in-hand, and built a love that feels like coming home. Now, we invite you to witness the next chapter of our story.</p>
+                        
+                        <blockquote class="verse">
+                            "We love because He first loved us."<br>
+                            <span class="verse-ref">— 1 John 4:19</span>
+                        </blockquote>
+                    </div>
+                    <div class="story-image">
+                        <div class="story-placeholder" aria-label="Love story image placeholder">❤</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wedding Party Section -->
+        <section class="section wedding-party" id="wedding-party">
+            <div class="container">
+                <h2 class="section-title serif">Our Wedding Party</h2>
+                <div class="party-grid">
+                    <div class="party-member">
+                        <div class="party-photo" aria-label="Eunice's photo">E</div>
+                        <h3 class="party-name">Eunice M.</h3>
+                        <p class="party-title">Maid of Honor</p>
+                        <p class="party-bio">Cara's sister and confidante since childhood. Her laughter is the soundtrack to our family gatherings.</p>
+                    </div>
+                    <div class="party-member">
+                        <div class="party-photo" aria-label="Tendai's photo">T</div>
+                        <h3 class="party-name">Tendai K.</h3>
+                        <p class="party-title">Best Man</p>
+                        <p class="party-bio">Simba's oldest friend. They've been through university, business ventures, and countless adventures together.</p>
+                    </div>
+                    <div class="party-member">
+                        <div class="party-photo" aria-label="Nomsa's photo">N</div>
+                        <h3 class="party-name">Nomsa D.</h3>
+                        <p class="party-title">Matron of Honor</p>
+                        <p class="party-bio">A pillar of wisdom and grace. Her calm presence has guided us through planning with ease.</p>
+                    </div>
+                    <div class="party-member">
+                        <div class="party-photo" aria-label="Rufaro's photo">R</div>
+                        <h3 class="party-name">Rufaro M.</h3>
+                        <p class="party-title">Groomsman</p>
+                        <p class="party-bio">Simba's cousin and partner in mischief. His energy brings joy to every room he enters.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details / FAQ Section -->
+        <section class="section details" id="details">
+            <div class="container">
+                <h2 class="section-title serif">Guest Information</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFAQ(this)" role="button" tabindex="0" aria-expanded="false">
+                            <span class="faq-title">Dress Code</span>
+                            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-content">
+                            <p>We envision an elegant evening where guests feel comfortable yet refined. For gentlemen, we suggest suits or smart casual attire. For ladies, cocktail dresses or elegant evening wear are perfect. Think soft neutrals, earth tones, and subtle textures to complement our "Dusty Dusk" theme.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFAQ(this)" role="button" tabindex="0" aria-expanded="false">
+                            <span class="faq-title">Gift Registry</span>
+                            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-content">
+                            <p>Your presence is the greatest gift. However, if you wish to contribute, we have registered at <a href="#" style="color: var(--tan);">Zimbabwean Home Store</a> and <a href="#" style="color: var(--tan);">International Registry</a>. You may also make a contribution toward our honeymoon fund via <a href="#" style="color: var(--tan);">this payment link</a>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFAQ(this)" role="button" tabindex="0" aria-expanded="false">
+                            <span class="faq-title">Children & Plus Ones</span>
+                            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-content">
+                            <p>We would be delighted to welcome children who are part of your immediate family. Please indicate on your RSVP if you'll be bringing children so we can prepare appropriately. For plus ones, please note that they are only invited if specifically mentioned on your invitation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFAQ(this)" role="button" tabindex="0" aria-expanded="false">
+                            <span class="faq-title">Accommodation & Travel</span>
+                            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-content">
+                            <p>For out-of-town guests, we recommend the following hotels near our venue:</p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li><strong>The Victoria Hotel</strong> – 5-minute drive • <a href="#" style="color: var(--tan);">Book Now</a></li>
+                                <li><strong>Harare International Hotel</strong> – 10-minute drive • <a href="#" style="color: var(--tan);">Book Now</a></li>
+                                <li><strong>Grandview Hotel</strong> – 15-minute drive • <a href="#" style="color: var(--tan);">Book Now</a></li>
+                            </ul>
+                            <p><strong>Getting to Harare:</strong> Robert Gabriel Mugabe International Airport (HRE) is served by major airlines. From the airport, we recommend pre-booking a taxi or using Uber (available in Harare).</p>
+                            <p><strong>Local Transport:</strong> Uber and local taxi services are reliable. If you need assistance, contact Eunice at +263 772 899 493.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="toggleFAQ(this)" role="button" tabindex="0" aria-expanded="false">
+                            <span class="faq-title">Event Timeline</span>
+                            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-content">
+                            <p>We've planned a beautiful day for you to enjoy with us:</p>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-time">4:00 PM</div>
+                                    <div class="timeline-event">Ceremony begins</div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-time">5:00 PM</div>
+                                    <div class="timeline-event">Cocktail hour with canapés</div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-time">6:30 PM</div>
+                                    <div class="timeline-event">Seated dinner service</div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-time">8:00 PM</div>
+                                    <div class="timeline-event">First dance & evening celebrations</div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-time">11:00 PM</div>
+                                    <div class="timeline-event">Farewell send-off</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Venue Section -->
+        <section class="section venue" id="venue">
+            <div class="container">
+                <h2 class="section-title serif">The Celebration</h2>
+                <div class="venue-content">
+                    <div class="venue-text">
+                        <h3 class="serif">Kingfisher in the Park</h3>
+                        <p>Set amidst manicured gardens and whispering trees, Kingfisher offers an intimate setting where elegance meets natural beauty. The venue's timeless architecture and serene ambiance perfectly reflect the love we share.</p>
+                        <p>As the afternoon sun filters through the canopy, we'll exchange vows surrounded by those who mean the world to us.</p>
+                        
+                        <div class="address">
+                            <p><i class="fas fa-map-marker-alt"></i> 61 Prices Avenue, Harare, Zimbabwe</p>
+                            <p><i class="fas fa-clock"></i> Saturday, December 20, 2025 at 4:00 PM</p>
+                            <p><i class="fas fa-car"></i> Ample parking available on-site</p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=61+Prices+Avenue,+Harare,+Zimbabwe&travelmode=driving" class="directions-btn">Get Directions</a>
+                            <a href="#" class="calendar-btn" id="addToCalendar">
+                                <i class="far fa-calendar-plus"></i> Add to Calendar
+                            </a>
+                        </div>
+
+                        <!-- Weather Widget -->
+                        <div class="weather-widget">
+                            <div class="weather-icon">
+                                <i class="fas fa-sun" id="weather-icon"></i>
+                            </div>
+                            <div id="weather-info">
+                                <p>Typical December weather in Harare: Warm and sunny with possible afternoon showers</p>
+                                <p>Average temperature: 25°C / 77°F</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.656036289202!2d31.04859437512894!3d-17.82528208323055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a5e4a1a8a0a5%3A0x5a8a8a8a8a8a8a8a!2s61%20Prices%20Avenue%2C%20Harare%2C%20Zimbabwe!5e0!3m2!1sen!2szw!4v1712345678901!5m2!1sen!2szw" allowfullscreen="" loading="lazy" title="Map showing wedding venue location"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section class="section rsvp" id="rsvp">
+            <div class="container">
+                <h2 class="section-title serif">Join Us</h2>
+                <div class="rsvp-container">
+                    <div class="rsvp-form">
+                        <form id="rsvpForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <select id="guests" class="form-control" required>
+                                    <option value="">Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5+">5 or more</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Which events will you attend?</label>
+                                <div class="event-checkboxes">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="ceremony" name="events" value="ceremony" checked>
+                                        <label for="ceremony">Wedding Ceremony & Reception (Dec 20)</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="rehearsal" name="events" value="rehearsal">
+                                        <label for="rehearsal">Rehearsal Dinner (Dec 19)</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="brunch" name="events" value="brunch">
+                                        <label for="brunch">Farewell Brunch (Dec 21)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Special Requests</label>
+                                <textarea id="message" class="form-control" placeholder="Dietary requirements, song requests, etc."></textarea>
+                            </div>
+                            
+                            <div id="success-message">
+                                <p>🎉 Your RSVP has been sent! We are honored to celebrate with you.</p>
+                            </div>
+                            
+                            <button type="submit" class="btn" id="submitBtn">
+                                <span class="btn-text">Send RSVP</span>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <h3 class="contact-name">Eunice</h3>
+                            <p class="contact-number">+263 772 899 493</p>
+                            <a href="https://wa.me/263772899493" class="whatsapp-link">Message on WhatsApp</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <h3 class="contact-name">Simba</h3>
+                            <p class="contact-number">+263 719 959 630</p>
+                            <a href="https://wa.me/263719959630" class="whatsapp-link">Message on WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-heart">♥</div>
+            <p class="footer-text serif">With love, Cara & Simba</p>
+            <p class="footer-date">December 20, 2025 • Harare, Zimbabwe</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
