@@ -858,13 +858,14 @@ h1, h2, h3, .serif {
 /* Scroll Down */
 .scroll-down {
     position: absolute;
-    bottom: 2rem;
+    bottom: -0rem;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     cursor: pointer;
     color: var(--dark);
     transition: all 0.3s ease;
+    z-index: 3;
 }
 
 .scroll-down:hover {
